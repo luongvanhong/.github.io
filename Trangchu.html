@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop quần áo thời trang</title>
+    <link rel="stylesheet" href="css/Trangchu.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/653a0f5c-98e6-4fd1-91e0-f08d35e627d7.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--thanh menu-->
+    <nav>
+      <div class="menu">
+        <ul>
+          <img src="img/h25.jpg" alt="logo" />
+          <div class="searchbox">
+            <input type="text" placeholder="Tìm kiếm..." />
+            <a id="timkiem"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </div>
+          <li><a href="#trangchu">Trang chủ</a></li>
+          <li><a href="#h3">Sản phẩm</a></li>
+          <li><a href="#poster3">Liên hệ</a></li>
+          <li><a href="html/Gioithieu.html">Về chúng tôi</a></li>
+          <a href="index.html"><button class="btn">Đăng nhập</button></a>
+          <li>
+            <a href="#giohang">
+              <div id="cart-button" class="cart-button" onclick="toggleCart()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count"> 0</span>
+            </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <header id="trangchu">
+      <div class="logo">
+        <img
+          src="img/cac-mau-logo-shop-quan-ao-thoi-trang-dep-va-tinh-te.jpg"
+          alt="logo"
+        />
+      </div>
+      <p>SHOP QUẦN ÁO THỜI TRANG</p>
+    </header>
+
+    <section class="main-content">
+      <img src="img/fashion design.jpg" alt="ảnh bìa" />
+
+      <!--sản phẩm giam giá-->
+      <h3 id="sanpham-sell">ƯU ĐÃI ĐẶC BIỆT</h3>
+      <hr />
+      <div class="anh-sell">
+        <img src="img/1200w-ClmZweBZr0w.jpg" alt="ảnh sell" />
+      </div>
+      <div class="khung">
+        <div class="cac-sanpham-sell">
+          <div class="sanpham-sell">
+            <img
+              src="img/1dfa3e389639ae050055e64c6bb3969c.png"
+              alt="ảnh áo nữ trung niên"
+            />
+            <h2 class="tensanpham">Áo nữ trung niên</h2>
+            <p class="gia"><a>Giá: </a> 50.000vnđ</p>
+            <p class="mota">
+              <a href="Chitietsanpham02.html">Chi tiết sản phẩm</a>
+            </p>
+            <button
+              class="nutgiohang"
+              class="add-to-cart"
+              onclick="addToCart('Giảm giá 70% cho sản phẩm áo nữ trung niên ', 50.000)"
+            >
+              Thêm giỏ hàng<i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+
+          <div class="sanpham-sell">
+            <img
+              src="img/img_1735_ee52d8d96ffc461087d7bd7bb3c12719.jpg"
+              alt="ảnh áo len mịn"
+            />
+            <h2 class="tensanpham">Áo len mịn</h2>
+            <p class="gia"><a>Giá: </a> 90.000vnđ</p>
+            <p class="mota">
+              <a href="Chitietsanpham01.html">Chi tiết sản phẩm</a>
+            </p>
+            <button
+              class="nutgiohang"
+              class="add-to-cart"
+              onclick="addToCart('Giảm giá 70% cho sản phẩm Áo len mịn', 90)"
+            >
+              Thêm giỏ hàng<i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+
+          <div class="sanpham-sell">
+            <img
+              src="img/6f7ef652b3547fce97a0cc7d648873b4.jpg_720x720q80.jpg"
+              alt="ảnh áo polo"
+            />
+            <h2 class="tensanpham">Áo polo nam/nữ</h2>
+            <p class="gia"><a>Giá: </a> 150.000vnđ</p>
+            <p class="mota">
+              <a href="Chitietsanpham04.html">Chi tiết sản phẩm</a>
+            </p>
+            <button
+              class="nutgiohang"
+              class="add-to-cart"
+              onclick="addToCart('Giảm giá 70% cho sản phẩm Áo polo nam/nữ ', 150)"
+            >
+              Thêm giỏ hàng<i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+
+          <div class="sanpham-sell">
+            <img
+              src="img/0de86d914d5bdf83f36b36290567a8d6-1661245530057.webp"
+              alt="ảnh áo thun"
+            />
+            <h2 class="tensanpham">Áo thun local</h2>
+            <p class="gia"><a>Giá: </a> 130.000vnđ</p>
+            <p class="mota">
+              <a href="Chitietsanpham03.html">Chi tiết sản phẩm</a>
+            </p>
+            <button
+              class="nutgiohang"
+              class="add-to-cart"
+              onclick="addToCart('Giảm giá 70% cho sản phẩm Áo thun local', 130)"
+            >
+              Thêm giỏ hàng<i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--poster2-->
+      <div id="poster2">
+        <img
+          src="img/stock-vector-abstract-art-design-stiff-liquid-molten-objects-set-of-vector-illustrations-posters-and-2264444101.jpg"
+        />
+      </div>
+      <!--SẢN PHẨM-->
+      <h3 id="h3">SẢN PHẨM</h3>
+      <hr />
+      <div class="cacsanpham">
+        <div class="sanpham">
+          <img
+            src="img/1dfa3e389639ae050055e64c6bb3969c.png"
+            alt="ảnh áo nữ trung niên"
+          />
+          <h2 class="tensanpham">Áo nữ trung niên</h2>
+          <p class="gia"><a>Giá: </a> 550.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham1.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Áo nữ trung niên 550.000vnđ', 550)"
+          >
+            Thêm giỏ hàng<i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/15b51b44e2ed173f32dbbe873da41f70.jpg"
+            alt="Áo khoát kaki"
+          />
+          <h2 class="tensanpham">Áo khoát kaki</h2>
+          <p class="gia"><a>Giá: </a> 750.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham2.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm áo khoát kaki 750.000vnđ', 750)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/Ao-Thun-Nam-Han-Quoc-Sanh-Dieu-ATQ04.jpg"
+            alt="Áo thun nam"
+          />
+          <h2 class="tensanpham">Áo thun nam</h2>
+          <p class="gia"><a>Giá: </a> 180.000.vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham3.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Áo thun nam 180.000vnđ', 180)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/ayya9596_compressed_3b2600653ddf4f199d1cbe65df3541ce.webp"
+            alt="Áo sơ mi nam"
+          />
+          <h2 class="tensanpham">Áo sơ mi nam</h2>
+          <p class="gia"><a>Giá: </a> 380.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham4.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Áo sơ mi nam 380.000vnđ', 380)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/35_f5687af924784cffb58c3207b0cc189c.png"
+            alt="Áo thun đen"
+          />
+          <h2 class="tensanpham">Áo thun đen</h2>
+          <p class="gia"><a>Giá: </a> 180.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham5.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Áo thun đen 180.000vnđ',180)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img src="img/11918511673-104616149.jpg" alt="Áo nỉ họa tiết" />
+          <h2 class="tensanpham">Áo nỉ họa tiết</h2>
+          <p class="gia"><a>Giá: </a> 360.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham6.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Áo nỉ họa tiết 360.000vnđ', 360)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/f1ff54bb750f2c341839ae8ae3c28ca0.jpg"
+            alt="Áo loptop nữ"
+          />
+          <h2 class="tensanpham">Áo loptop nữ</h2>
+          <p class="gia"><a>Giá: </a> 260.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham7.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Áo loptop nữ 260.000vnđ', 260)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img src="img/hi02-t01.webp" alt="Áo thun trắng" />
+          <h2 class="tensanpham">Áo thun trắng</h2>
+          <p class="gia"><a>Giá: </a> 180.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham8.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Áo thun trắng 180.000vnđ',180)">
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/Red-Loose-Clothes-Hiphop-Sorona-240g-100-Cotton-T-Shirt-Sport-Tshirt-Polyester-Printing-Custom-Clothing-Customized-Work-Wear.png"
+            alt="Áo thun đỏ trơn "
+          />
+          <h2 class="tensanpham">Áo thun đỏ trơn</h2>
+          <p class="gia"><a>Giá: </a> 350.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham9.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Áo thun đỏ trơn 350.000vnđ', 350)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/vn-11134207-7qukw-liuf0703q95e39.jpg"
+            alt="Quần ống rộng"
+          />
+          <h2 class="tensanpham">Quần ống rộng</h2>
+          <p class="gia"><a>Giá: </a> 350.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham10.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Quần ống rộng 350.000vnđ',350)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/736853cba44dc7d26afd0e46078b9451.jpg"
+            alt="Quần nam ngắn"
+          />
+          <h2 class="tensanpham">Quần nam ngắn</h2>
+          <p class="gia"><a>Giá: </a> 180.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham11.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Quần nam ngắn 180.000vnđ', 180)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/vn-11134207-7r98o-llm8xf1slvi4ff_tn.jpg"
+            alt="Chân váy nữ ngắn"
+          />
+          <h2 class="tensanpham">Chân váy nữ ngắn</h2>
+          <p class="gia"><a>Giá: </a> 200.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham12.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Chân váy nữ ngắn 200.000vnđ', 200)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/dcc0ecabba47d9f7c8c97158c0ccad9e.jpg"
+            alt="váy jean dài"
+          />
+          <h2 class="tensanpham">Váy jean dài</h2>
+          <p class="gia"><a>Giá: </a> 400.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham13.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Váy jean dài 400.000vnđ',400)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/dosiin-friends-forever-store-quan-ff-vintage-baggy-jeans-130281130281.png"
+            alt="Quần Baggy "
+          />
+          <h2 class="tensanpham">Quần Baggy</h2>
+          <p class="gia"><a>Giá: </a> 280.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham14.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Quần Baggy 280.000vnđ', 280)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+
+        <div class="sanpham">
+          <img
+            src="img/img_1737_23a02a497d1f4971baa8d37f9343c414_master.webp"
+            alt="Áo len mịn"
+          />
+          <h2 class="tensanpham">Áo len mịn</h2>
+          <p class="gia"><a>Giá: </a> 360.000vnđ</p>
+          <p class="mota">
+            <a href="Chitietsanpham15.html">Chi tiết sản phẩm</a>
+          </p>
+          <button
+            class="nutgiohang"
+            class="add-to-cart"
+            onclick="addToCart('Sản phẩm Áo len mịn 360.000vnđ', 360)"
+          >
+            Thêm giỏ hàng <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <div id="cart-container" class="cart-container">
+      <h2 id="giohang"> Thanh toán giỏ hàng</h2>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Tổng số tiền là: <span id="total-value">0</span></p>
+      <button onclick="checkout()">Thanh toán</button>
+    </div>
+    <script src="Giohang.js"></script>
+    <div id="poster3">
+      <img src="img/1600w-lK9XhjmlTvg.jpg" alt="poster tạm biệt" />
+    </div>
+    <footer>
+      <div class="footdichvu">
+        <div class="col">
+          <h6><i class="fa-solid fa-gift"></i> ƯU ĐÃI VÀ KHUYẾN MÃI</h6>
+          <p><a href="#">- Chương trình khuyến mãi</a></p>
+          <p><a href="#">- Tích điểm và đổi thưởng</a></p>
+        </div>
+
+        <div class="col">
+          <h6>
+            <i class="fa-solid fa-hand-holding-heart"></i> Chăm sóc khách hàng
+          </h6>
+          <p><a href="#">- Tư vấn và hỗ trợ</a></p>
+          <p><a href="#">- liên kết và tạo mối quan hệ</a></p>
+        </div>
+
+        <div class="col">
+          <h6><i class="fa-solid fa-shield-halved"></i> AN TOÀN THÔNG TIN</h6>
+          <p><a href="#">- Bảo mật thông tin</a></p>
+          <p><a href="#">- Giám sát và bảo vệ dữ liệu</a></p>
+        </div>
+      </div>
+      <div class="footthongtin">
+        <div class="col1">
+          <h6>Shop quần áo thời trang</h6>
+          <p>khai trương: 20/11/2023</p>
+          <p>giờ hoạt động: 8h00.AM - 21h00.PM</p>
+          <p>Địa chỉ: Tân Hiệp - Tân Uyên - Bình Dương</p>
+          <img src="img/653a0f5c-98e6-4fd1-91e0-f08d35e627d7.png" alt="logo" />
+        </div>
+        <div class="col2">
+          <h6>Khách hàng VIP</h6>
+          <form action="#">
+            <input type="text" placeholder="Họ và tên (*)" required />
+            <input type="email" placeholder="Địa chỉ: email(*)" required />
+            <input type="submit" value="Đăng ký" />
+          </form>
+        </div>
+        <div class="col3">
+          <h6>Liên hệ với chúng tôi</h6>
+          <p><i class="fa-solid fa-phone"></i>0989849094</p>
+          <p>
+            <i class="fa-solid fa-envelope"></i
+            ><a href="mailto:Lvhshin232@gmail.com"> Lvhshin232@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="footbottom">
+        <p>&copy; Bản quyền thuộc về shop bán quần áo</p>
+      </div>
+    </footer>
+  </body>
+</html>
